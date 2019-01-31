@@ -9,8 +9,8 @@ let canvasDim
 
 
 function setup(){
-    if(window.innerWidth() < 400){
-        canvasDim = 340;
+    if(window.innerWidth < 400){
+        canvasDim = window.innerWidth - 40;
     }else{
         canvasDim = 400;
     }
@@ -83,8 +83,8 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('desc').innerHTML =
-    h + ":" + m + ":" + s;
+    // document.getElementById('desc').innerHTML = h + ":" + m + ":" + s;
+    document.getElementById('desc').innerHTML = window.innerWidth;
     var t = setTimeout(startTime, 500);
   }
 
