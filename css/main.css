@@ -38,7 +38,7 @@ body{
 
 .content{
     position: fixed;
-    top : 50%;
+    top : 42%;
     left: 50%;
     margin-left: -200px;
     margin-top: -200px;
@@ -54,7 +54,7 @@ body{
     height: 86px;
     text-align: center;
     position: fixed;
-    bottom:8%;
+    bottom:12%;
     left: 50%;
     margin-left: -100px;
     margin-bottom: -43px;
