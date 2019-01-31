@@ -28,5 +28,38 @@
         <div id="footer-left">Left Footer</div>
         <div id="footer-right">3D Terrain</br>Generator</div>
     </section>
+
+    <script>
+        var elem = document.documentElement;
+        var clickable = getElementById("desc");
+        clickable.addEventListener("click", function(){
+            openFullscreen();
+        });
+        
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { 
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { 
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { 
+            elem.msRequestFullscreen();
+          }
+        }
+        
+        function closeFullscreen() {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) { 
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) { 
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+        </script>
+
 </body>
 </html>
