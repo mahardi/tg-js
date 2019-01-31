@@ -5,10 +5,17 @@ let h = 1000;
 let scale = 20;
 let flying = 0;
 let terrain;
+let canvasDim
+
 
 function setup(){
+    if(window.innerWidth() < 400){
+        canvasDim = 340;
+    }else{
+        canvasDim = 400;
+    }
     let arr = new Arrays();
-    let canvas = createCanvas(400,400,WEBGL);
+    let canvas = createCanvas(canvasDim, canvasDim, WEBGL);
     canvas.parent("canvas");
 
     cols = (w/scale)/2;    
@@ -80,7 +87,7 @@ function startTime() {
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
   }
-  
+
   function checkTime(i) {
     if (i < 10) {i = "0" + i};  
     return i;
