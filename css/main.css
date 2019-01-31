@@ -50,13 +50,16 @@ body{
 }
 
 .content > #desc{
+    width: 200px;
+    height: 86px;
     text-align: center;
     position: fixed;
-    bottom:5%;
+    bottom:8%;
     left: 50%;
+    margin-left: -100px;
+    margin-bottom: -43px;
     color: white;
     font-size: 50px;
-    padding: 10px;
 }
 
 .footer{
