@@ -49,10 +49,6 @@ body{
     align-items: center;
 }
 
-.content > #canvas{
-
-}
-
 .content > #desc{
     text-align: center;
     position: fixed;

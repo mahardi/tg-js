@@ -16,7 +16,9 @@
 
     <section class="content">
         <div id="canvas"></div>
-        <div id="desc"></div>
+        <div id="desc" onclick="openFullscreen">
+            <a href="#" class="fill-div"></a>
+        </div>
     </section>
 
     <section class="header">
@@ -31,7 +33,7 @@
 
     <script>
         var elem = document.documentElement;
-        var clickable = getElementById("desc");
+        var clickable = document.getElementById("desc");
         clickable.addEventListener("click", function(){
             openFullscreen();
         });
